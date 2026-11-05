@@ -2,7 +2,7 @@
 Proyecto integrador de Análisis y Diseño de Software.
 
 ## Integrantes
-- (CBC) · (BCB)
+CBC · BCB
 
 ## Descripción
 Sistema web que centraliza la agenda de canchas: los jugadores reservan y cancelan, los encargados gestionan la asistencia de sus canchas y el administrador consulta indicadores. Tecnologías: HTML5, CSS3, JavaScript, GitHub Pages y Supabase (Auth, PostgreSQL, RLS).
