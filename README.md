@@ -13,10 +13,10 @@ Sistema web que centraliza la agenda de canchas: los jugadores reservan y cancel
 ## Credenciales de demostración (datos ficticios)
 | Rol | Correo | Contraseña |
 |---|---|---|
-| Jugador | p1@prueba.com | (12345678) |
-| Jugador | p2@prueba.com | (12345678) |
-| Encargado (canchas 1 y 2) | encargado@prueba.com | (12345678) |
-| Administrador | admin@prueba.com | (12345678) |
+| Jugador | p1@prueba.com | 12345678 |
+| Jugador | p2@prueba.com | 12345678 |
+| Encargado (canchas 1 y 2) | encargado@prueba.com | 12345678 |
+| Administrador | admin@prueba.com | 12345678 |
 
 ## Instalación (reproducir la base de datos)
 1. Cree un proyecto en Supabase y, en el SQL Editor, ejecute en orden: `sql/esquema.sql`, `sql/politicas_rls.sql`, `sql/datos_prueba.sql`.
