@@ -1,8 +1,7 @@
 # Canchas Santa Marta — MVP de reserva de canchas deportivas
 Proyecto integrador de Análisis y Diseño de Software.
 
-## Integrantes
-- (Nombre 1) · (Nombre 2)
+
 
 ## Descripción
 Sistema web que centraliza la agenda de canchas: los jugadores reservan y cancelan, los encargados gestionan la asistencia de sus canchas y el administrador consulta indicadores. Tecnologías: HTML5, CSS3, JavaScript, GitHub Pages y Supabase (Auth, PostgreSQL, RLS).
