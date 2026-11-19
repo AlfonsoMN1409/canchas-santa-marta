@@ -119,3 +119,15 @@ Comparar **dos plataformas reales** de reserva (con enlace y fecha de consulta; 
 |---|---|---|---|---|
 | (fecha) | Claude | Propuesta inicial de esquema, RLS y frontend | Esquema, políticas, app.js | Pruebas con 3 cuentas en Supabase |
 Fuentes sugeridas: documentación oficial de Supabase (Auth, RLS, JS), GitHub Pages, MDN, OWASP, WCAG.
+
+## 15. Cambios de la versión 2
+| ID | Requisito nuevo | Actor | Criterio de aceptación |
+|---|---|---|---|
+| RF-16 | Aceptar términos y tratamiento de datos al registrarse | Jugador | Sin casilla marcada no se crea la cuenta (validado en la interfaz y en la BD); se guarda la fecha de aceptación |
+| RF-17 | Registrar cédula (6-10 dígitos, única) y celular (10 dígitos, inicia en 3) | Jugador | Valores inválidos o cédula repetida se rechazan |
+| RF-18 | Crear/editar canchas con precio por hora, días y horario de atención | Dueño/Admin | Se generan franjas de 1 hora para 14 días |
+| RF-19 | Aislamiento entre dueños | Dueño | Un dueño no ve ni modifica canchas ni reservas de otro |
+| RF-20 | El admin asigna o retira el rol de dueño por correo | Admin | Solo el admin puede ejecutarlo |
+
+Pruebas nuevas (ejecutar y anotar resultado obtenido): CP-16 registro sin términos; CP-17 cédula inválida y duplicada; CP-18 dueño crea cancha y aparece para jugadores; CP-19 reserva de un cliente en la cancha de Pepito no aparece en la agenda de Juan; CP-20 Juan no puede editar ni generar franjas en la cancha de Pepito; CP-21 un jugador no puede darse rol de dueño; CP-22 cambiar el horario conserva las reservas existentes.
+Riesgo nuevo: datos personales (cédula, celular). Mitigación: el dueño solo ve nombre y celular, y solo de reservas de su cancha; la cédula nunca se expone a dueños.
